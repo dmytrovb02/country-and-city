@@ -1,8 +1,8 @@
-# City Management Application
+🌃 # City Management Application 💻
 
 This application provides endpoints for managing cities and user authentication.
 
-## Prerequisites
+## Prerequisites 📝 
 
 - JDK 17
 - Gradle
@@ -10,7 +10,7 @@ This application provides endpoints for managing cities and user authentication.
 - Docker
 - Docker Compose
 
-## Running the Application
+## Running the Application 🎯
 
 ### Step 1: Clone the Repository
 
