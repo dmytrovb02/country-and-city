@@ -4,7 +4,7 @@ This application provides endpoints for managing cities and user authentication.
 
 ## Prerequisites
 
-- JDK 17 or higher
+- JDK 17
 - Gradle
 - PostgeSQL
 - Docker
@@ -14,12 +14,12 @@ This application provides endpoints for managing cities and user authentication.
 
 ### Step 1: Clone the Repository
 
-git clone <repository_url>
-cd <repository_name>
+git clone https://github.com/dmytrovb02/country-and-city
+cd country-and-city
 
 ### Step 2: Build the Application
 
-mvn clean package
+./gradlew build
 
 ### Step 3: Run Docker Compose
 
@@ -31,11 +31,14 @@ This command will start the application along with the required dependencies (e.
 
 Once the application is running, you can access the endpoints using the following base URL:
 
-http://localhost:8080/api
+http://localhost:8081
 
 ## Endpoints
 
 ### City Management
+
+#### Swagger
+http://localhost:8081/swagger-ui/index.html#
 
 #### Get all cities
 
