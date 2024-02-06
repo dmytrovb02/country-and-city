@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=dima02wer
+      - POSTGRES_DB=country_db
+    ports:
+      - $POSTGRESDB_LOCAL_PORT:$POSTGRESDB_DOCKER_PORT
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres -d country_db" ]
+      timeout: 30s
+      retries: 3
+  app:
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: on-failure
+    image: country-and-city-list
+
+    build: .
+    env_file: ./.env
+    ports:
+      - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
+      - $DEBUG_PORT:$DEBUG_PORT
+    environment:
+      SPRING_APPLICATION_JSON: '{
+          "spring.datasource.url" : "jdbc:postgresql://postgres:$POSTGRESDB_DOCKER_PORT/country_db",
+          "spring.datasource.username" : "postgres",
+          "spring.datasource.password" : "dima02wer",
+          "spring.jpa.hibernate.ddl-auto" : "validate",
+          "spring.jpa.show-sql" : "true"
+      }'
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"

@@ -1,4 +1,4 @@
-package com.techtask.entity;
+package com.techtask.model;
 
 public enum RoleType {
     USER,

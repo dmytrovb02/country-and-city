@@ -2,7 +2,7 @@ package com.techtask.mapper;
 
 import com.techtask.dto.user.UserRegistrationRequestDto;
 import com.techtask.dto.user.UserResponseDto;
-import com.techtask.entity.User;
+import com.techtask.model.User;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
