@@ -42,25 +42,25 @@ http://localhost:8081/swagger-ui/index.html#
 
 #### Get all cities
 
-GET /cities
+GET /api/cities
 
 Get a list of all available cities.
 
 #### Get all unique city names
 
-GET /cities/name
+GET /api/cities/name
 
 Get a list of all available unique city names.
 
 #### Update a city by ID
 
-PUT /cities/{id}
+PUT /api/cities/{id}
 
 Update a city name and logo by ID. Requires EDITOR role.
 
 #### Search cities
 
-GET /cities/search
+GET /api/cities/search
 
 Search cities by name and name of country.
 
@@ -68,12 +68,12 @@ Search cities by name and name of country.
 
 #### User Registration
 
-POST /auth/register
+POST /api/auth/register
 
 Register a new user.
 
 #### User Authentication
 
-POST /auth/login
+POST /api/auth/login
 
 Authenticate a user.
