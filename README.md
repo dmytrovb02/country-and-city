@@ -10,7 +10,7 @@ This application provides endpoints for managing cities and user authentication.
 - Docker
 - Docker Compose
 
-## ⛏ Running the Application
+## ⛏Running the Application
 
 ### ✘ Step 1: Clone the Repository
 
@@ -33,7 +33,7 @@ Once the application is running, you can access the endpoints using the followin
 
 #### http://localhost:8081/swagger-ui/index.html
 
-## Endpoints
+## 🌟Endpoints
 
 ### City Management
 
