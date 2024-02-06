@@ -2,11 +2,11 @@ package com.techtask.service.impl;
 
 import com.techtask.dto.user.UserRegistrationRequestDto;
 import com.techtask.dto.user.UserResponseDto;
-import com.techtask.entity.User;
+import com.techtask.model.User;
 import com.techtask.exception.EntityNotFoundException;
 import com.techtask.exception.RegistrationException;
 import com.techtask.mapper.UserMapper;
-import com.techtask.repository.UserRepository;
+import com.techtask.repository.user.UserRepository;
 import com.techtask.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;

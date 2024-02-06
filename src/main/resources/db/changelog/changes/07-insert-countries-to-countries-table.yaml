@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-countries-data
+      author: Vyshnivskyi
+      changes:
+        - insert:
+            tableName: countries
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: 'United States'
+        - insert:
+            tableName: countries
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: 'United Kingdom'
+        - insert:
+            tableName: countries
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: 'Germany'
+        - insert:
+            tableName: countries
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: 'France'
+        - insert:
+            tableName: countries
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: 'Canada'

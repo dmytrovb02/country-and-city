@@ -1,6 +1,6 @@
-package com.techtask.repository;
+package com.techtask.repository.user;
 
-import com.techtask.entity.User;
+import com.techtask.model.User;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

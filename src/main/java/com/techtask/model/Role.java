@@ -1,4 +1,4 @@
-package com.techtask.entity;
+package com.techtask.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

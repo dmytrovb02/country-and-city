@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-cities-table
+      author: Vyshnivskyi
+      changes:
+        - createTable:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: country_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: logo_url
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

@@ -11,7 +11,7 @@ import org.hibernate.validator.constraints.Length;
 @Builder
 public class UserLoginRequestDto {
     @NotBlank
-    @Length(min = 8, max = 20)
+    @Length(min = 8, max = 50)
     private String email;
 
     @NotBlank
