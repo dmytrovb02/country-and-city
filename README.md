@@ -14,8 +14,8 @@ This application provides endpoints for managing cities and user authentication.
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/dmytrovb02/country-and-city
-cd country-and-city
+#### git clone https://github.com/dmytrovb02/country-and-city
+#### cd country-and-city
 
 ### Step 2: Build the Application
 
@@ -31,14 +31,11 @@ This command will start the application along with the required dependencies (e.
 
 Once the application is running, you can access the endpoints using the following base URL:
 
-http://localhost:8081
+#### http://localhost:8081/swagger-ui/index.html
 
 ## Endpoints
 
 ### City Management
-
-#### Swagger
-http://localhost:8081/swagger-ui/index.html#
 
 #### Get all cities
 
