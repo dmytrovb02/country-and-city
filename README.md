@@ -10,24 +10,24 @@ This application provides endpoints for managing cities and user authentication.
 - Docker
 - Docker Compose
 
-## Running the Application 🎯
+## ⛏ Running the Application
 
-### Step 1: Clone the Repository
+### ✘ Step 1: Clone the Repository
 
 #### git clone https://github.com/dmytrovb02/country-and-city
 #### cd country-and-city
 
-### Step 2: Build the Application
+### ✘ Step 2: Build the Application
 
 ./gradlew build
 
-### Step 3: Run Docker Compose
+### ✘ Step 3: Run Docker Compose
 
 docker-compose up --build
 
 This command will start the application along with the required dependencies (e.g., database).
 
-### Step 4: Access the Application
+### ✘ Step 4: Access the Application
 
 Once the application is running, you can access the endpoints using the following base URL:
 
@@ -61,7 +61,7 @@ GET /api/cities/search
 
 Search cities by name and name of country.
 
-### Authentication
+### 🎯Authentication
 
 #### User Registration
 
