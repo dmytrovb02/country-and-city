@@ -1,4 +1,4 @@
-🌃 # City Management Application 💻
+# 🌃 City Management Application 💻
 
 This application provides endpoints for managing cities and user authentication.
 
